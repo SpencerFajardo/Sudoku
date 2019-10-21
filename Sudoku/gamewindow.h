@@ -15,6 +15,11 @@ class GameWindow : public QMainWindow
 public:
     GameWindow(SudokuModel *model, QWidget *parent = nullptr);
     ~GameWindow();
+signals:
+    void boxDataChanged(int,int);
+
+private slots:
+    void on_Box1_textChanged();
 
 private:
     Ui::GameWindow *ui;
