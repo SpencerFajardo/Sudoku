@@ -6,6 +6,7 @@ GameWindow::GameWindow(QWidget *parent)
     , ui(new Ui::GameWindow)
 {
     ui->setupUi(this);
+    ui->line->setStyleSheet(QString("{background-color: rgb(0,0,153);}"));
 }
 
 GameWindow::~GameWindow()
