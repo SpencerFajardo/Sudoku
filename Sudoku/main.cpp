@@ -5,7 +5,8 @@
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    GameWindow w;
+    SudokuModel m;
+    GameWindow w(&m);
     w.show();
     return a.exec();
 }

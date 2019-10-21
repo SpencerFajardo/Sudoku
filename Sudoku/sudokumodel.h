@@ -4,10 +4,19 @@
 #include <QMainWindow>
 #include <QObject>
 
-class SudokuModel
+class SudokuModel : public QObject
 {
+    Q_OBJECT
+
+private:
+
 public:
     SudokuModel();
+
+signals:
+
+public slots:
+
 };
 
 #endif // SUDOKUMODEL_H

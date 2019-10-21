@@ -1,7 +1,7 @@
 #include "gamewindow.h"
 #include "ui_gamewindow.h"
 
-GameWindow::GameWindow(QWidget *parent)
+GameWindow::GameWindow(SudokuModel *model, QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::GameWindow)
 {
