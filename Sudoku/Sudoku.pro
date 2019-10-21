@@ -17,10 +17,12 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     main.cpp \
-    gamewindow.cpp
+    gamewindow.cpp \
+    sudokumodel.cpp
 
 HEADERS += \
-    gamewindow.h
+    gamewindow.h \
+    sudokumodel.h
 
 FORMS += \
     gamewindow.ui
