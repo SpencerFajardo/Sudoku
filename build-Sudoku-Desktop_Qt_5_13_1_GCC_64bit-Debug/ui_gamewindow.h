@@ -106,6 +106,9 @@ public:
     QTextEdit *textEdit_80;
     QTextEdit *textEdit_81;
     QFrame *line;
+    QFrame *line_2;
+    QFrame *line_3;
+    QFrame *line_4;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -362,9 +365,27 @@ public:
         line = new QFrame(centralwidget);
         line->setObjectName(QString::fromUtf8("line"));
         line->setGeometry(QRect(80, 160, 361, 20));
-        line->setLineWidth(5);
+        line->setLineWidth(2);
         line->setFrameShape(QFrame::HLine);
         line->setFrameShadow(QFrame::Sunken);
+        line_2 = new QFrame(centralwidget);
+        line_2->setObjectName(QString::fromUtf8("line_2"));
+        line_2->setGeometry(QRect(80, 280, 361, 20));
+        line_2->setLineWidth(2);
+        line_2->setFrameShape(QFrame::HLine);
+        line_2->setFrameShadow(QFrame::Sunken);
+        line_3 = new QFrame(centralwidget);
+        line_3->setObjectName(QString::fromUtf8("line_3"));
+        line_3->setGeometry(QRect(190, 50, 20, 361));
+        line_3->setLineWidth(2);
+        line_3->setFrameShape(QFrame::VLine);
+        line_3->setFrameShadow(QFrame::Sunken);
+        line_4 = new QFrame(centralwidget);
+        line_4->setObjectName(QString::fromUtf8("line_4"));
+        line_4->setGeometry(QRect(310, 50, 20, 361));
+        line_4->setLineWidth(2);
+        line_4->setFrameShape(QFrame::VLine);
+        line_4->setFrameShadow(QFrame::Sunken);
         GameWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(GameWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
